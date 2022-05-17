@@ -82,7 +82,7 @@ flashSlider('.my-slider-3', {
 	dots: true,
 	buttons: true,
 	buttonsHTML: ["Slide 01", "Slide 02", "Slide 03", "Slide 04", "Slide 05", "Slide 06", "Slide 07", "Slide 08"
-	, "Slide 09", "Slide 10", "Slide 11", "Slide 12", "Slide 13", "Slide 14"],
+	, "Slide 09", "Slide 10", "Slide 11", "Slide 12", "Slide 13", "Slide 14", "Slide 15"],
 	slideToShow: 1,
 	slideToScrollAbsolutely: true,
 	indexes: false,
@@ -123,7 +123,7 @@ flashSlider('.my-slider-4', {
 	dots: true,
 	buttons: true,
 	buttonsHTML: ["Slide 01", "Slide 02", "Slide 03", "Slide 04", "Slide 05", "Slide 06", "Slide 07", "Slide 08"
-	, "Slide 09", "Slide 10", "Slide 11", "Slide 12", "Slide 13", "Slide 14"],
+	, "Slide 09", "Slide 10", "Slide 11", "Slide 12", "Slide 13", "Slide 14", "Slide 15"],
 	slideToShow: 1,
 	indexes: true,
 	pauseOnHover: true,
