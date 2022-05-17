@@ -1,0 +1,198 @@
+Flash Slider - 1.0
+
+
+Using:
+
+flashSlider(your slider, {
+   autoplay: true,
+   dots: true
+})
+
+Settings: 
+
+01) autoplay
+
+Values: true | false
+
+Default value: false
+
+When true is set, slider starts playing
+
+02) autoplaySpeed
+
+Values: "very-fast" | "fast" | "normal" | "slow" | "very-slow" | milliseconds 
+
+Default value: "normal"
+
+Defines autoplays speed
+
+03) speed 
+
+Values: "very-fast" | "fast" | "normal" | "slow" | "very-slow" | "number + s" (For example 2s)
+
+Default value: "fast"
+
+Defines speed of sliding
+
+04) arrows
+
+Values: true | false 
+
+Default value: true
+
+When true is set, it adds arrows to slider
+
+05) draggable
+
+Values: true | false 
+
+Default value: true
+
+When true is set, slides can be dragged
+
+05) touchMove
+
+Values: true | false 
+
+Default value: true
+
+When true is set, slides can be dragged on touchscreen
+
+06) indexes
+
+Values: true | false
+
+Default value: false
+
+When true is set, it shows index of current slide
+
+07) dots
+
+Values: true | false 
+
+Default value: false 
+
+When true is set, dots will be added to slider 
+
+07) buttons
+
+Values: true | false 
+
+Default value: false 
+
+When true is set, buttons will be added to slider 
+
+08) buttonsHTML 
+
+Value: an array for html of added buttons 
+
+For example: 
+
+buttonsHTML: ["Slide 01", "Slide 02", "Slide 03", "Slide 04", "Slide 05", "Slide 06", "Slide 07"]
+
+Default: html of the buttons will be numbers
+
+Note: You will need this property, when buttons is set true
+
+09) slideToShow
+
+Value: any number
+
+Default: 3
+
+Defines how many slides must be visible in slider or we can say that it defines number of slides in slider.
+
+10) slideToScrollAbsolutely
+
+Values: true | false 
+
+Default value: false 
+
+When true is set, slides will be fully scrolled
+
+When false is set, slides will be scrolled one by one 
+
+11) gap
+
+Value: any number
+
+Default: 0
+
+Note: You can only write a number, it is not allowed to write number with px or any length unit, such as "em", "rem" (For example 10px)
+
+Note: Do not use margins in CSS istead of gap, if you use that, it will give errors
+
+Defines gaps between slides
+
+12) height
+
+Value: any number + a length unit
+
+Note: You must use a length unit with number, such as "em", "rem"
+
+Defines height of slide
+
+13) CSSEase
+
+Values: values of transition-times-function
+
+Default: "ease"
+
+Defines transition-times-function of slide
+
+14) pauseOnHover
+
+Values: true | false 
+
+Default value: true
+
+If true is set, when mouse is over of slider list, playing will be paused
+
+15) pauseOnFocus
+
+Values: true | false 
+
+Default value: false
+
+If true is set, when slider list is focused, playing will be paused
+
+16) width
+
+Value: any number + a length unit
+
+Note: You must use a length unit with number, such as "em", "rem"
+
+Defines width of slider
+
+17) responsive
+
+Is used to change settings due to different screen sizes
+
+Structure:
+
+responsive: [
+		{
+			breakpoint: 576,
+			settings: {
+				slideToShow: 3,
+				arrows: false
+
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slideToShow: 5,
+				arrows: true
+			}
+		}
+	]
+
+Breakpoint defines min-width and settings can be changed due to new screen size
+
+Note: You must write first smaller screen size.For example, when you write 992 before 576, it will not work truly.Mobile is first.
+
+Flash Slider - 1.0
+© Copyright 2022
+All rights reserved
+
