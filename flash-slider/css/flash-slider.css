@@ -116,7 +116,7 @@ body {
     width: 20%;
     border: solid white;
     background: none;
-    border-width: 0 3px 3px 0;
+    border-width: 0 1px 1px 0;
     display: inline;
     padding: 0;
     transform: rotate(135deg);
@@ -332,6 +332,23 @@ body {
 
 }    
 
+@media (min-width: 576px) {
+
+    .flash-slider-arrow {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: calc(50% - 15px);
+        left: -40px;
+    }
+
+    .flash-slider-next {
+        left: initial;
+        right: -40px;
+    }
+
+}
+
 @media (min-width: 992px) {
 
     .flash-slider-arrow {
@@ -341,6 +358,10 @@ body {
         left: -60px;
     }
 
+    .flash-slider-arrow-icon {
+        border-width: 0 3px 3px 0;
+    }
+    
     .flash-slider-next {
         left: initial;
         right: -60px;
