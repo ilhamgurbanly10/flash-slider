@@ -810,6 +810,8 @@ function flashSlider(elements, settings = {}) {
 		// the-end-of-calling-functions
 
 		window.addEventListener('resize', upload);
+		document.documentElement.addEventListener('mouseleave', function() { if (settings.autoplay) stop(); })
+		document.documentElement.addEventListener('mouseenter', function() { if (settings.autoplay) replay(); })
 		
 	}
 
